@@ -1,9 +1,5 @@
-import pandas as pd
-from sklearn.linear_model import LinearRegression
 import numpy as np
 import matplotlib.pyplot as plt 
-
-# reg = LinearRegression()
 
 #Creación de datos con Numpy a través de random. "Wes Mckinney,'Python for data analysis'", p. 103.
 X = np.random.uniform(0,3,1000)
@@ -25,8 +21,11 @@ def datos_simulados (X,Y, num_datos=1000, guardar = False, nombre="imagen_grafic
         print("Imagen guardada como:", nombre)
     else:
         plt.show()
-        
+
+#num_datos
     X = X[num_datos]
     Y = Y[num_datos]
 
-datos_simulados(X, Y, num_datos=100, guardar=False)
+#ejemplo de input de función
+datos_simulados(X, Y, num_datos = 1000, guardar=False)
+
